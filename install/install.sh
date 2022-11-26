@@ -3,11 +3,11 @@
 
 test || __() { :; }
 
-installer="https://github.com/techjavelin/bash-modules/raw/main/install.sh"
+installer="https://github.com/techjavelin/bash-modules/raw/main/install/install.sh"
 repo="https://github.com/techjavelin/bash-modules.git"
 archive="https://github.com/techjavelin/bash-modules/archive"
 project="bash-modules"
-exec="module"
+exec="module.bashlib"
 
 set -eu && :<<'USAGE'
 Usage: [sudo] ${0##*/} [VERSION] [OPTIONS...]

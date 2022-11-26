@@ -1,0 +1,66 @@
+#!/bin/env bash 
+
+declare -a FAILED_TESTS
+declare -a ERROR_TESTS
+let NUM_TESTS=0
+let NUM_SKIPPED=0
+let NUM_FAILS=0
+let NUM_PASSES=0
+let NUM_ERRORS=0
+
+function test.fail() {
+    local -r test_name=$1; shift
+    local -r msg="${@-}"
+
+    printf "[FAIL] - $msg"
+    FAILED_TESTS=(${FAILED_TESTS[*]} $test_name)
+    let NUM_FAILS++
+}
+
+function test.pass() {
+    let NUM_PASSES++
+}
+
+function test.error() {
+    local -r test_name=$1; shift
+    local -r msg="${@-}"
+
+    let NUM_ERRORS++
+    ERROR_TESTS=(${FAILED_TESTS[*] $test_name})
+    printf "[ERROR] - %s" $msg
+}
+
+function test.assert_function_exists() {
+    local -r func_name="$2"
+
+    if [ ! "$(type -t $func_name)" == "function" ]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+function test.test() {
+    let NUM_TESTS++
+    local -r test_name=$1; shift
+    local -r assertion=$1; shift
+
+    printf "Testing %-60s: " $test_name
+    if ! test.assert_function_exists "test.${assertion}"; then test.error $test_name "Assertion ${assertion} not found" && exit 1; fi
+    if ! ( source module && test.${assertion} "$@" ); then printf "[FAIL]\n" && test.fail $test_name; else printf "[PASS]\n" && let NUM_PASSES++; fi
+}
+
+function test.print_summary() {
+    echo ""
+    echo "----------------------------------"
+    echo "Tests Summary :"
+    echo "----------------------------------"
+    echo "Tests Passed  : ${NUM_PASSES}/${NUM_TESTS}"
+    echo "Tests Failed  : ${NUM_FAILS}/${NUM_TESTS}"
+    echo "Tests Skipped : ${NUM_SKIPPED}/${NUM_TESTS}"
+    echo "----------------------------------"
+    echo -e "Failed Tests  :"
+    for f in ${FAILED_TESTS[*]}; do
+        echo -e "\t- $f"
+    done
+}

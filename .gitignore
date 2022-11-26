@@ -1,0 +1,9 @@
+# diff files
+*.patch
+*.diff
+
+# Module build files
+build/
+
+# Binary output
+./module
