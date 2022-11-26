@@ -1,0 +1,98 @@
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_function_exists
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_function_exists
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:48 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Checking for function named modules.remote-modules.url
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found function named modules.remote-modules.url
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:48 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:48 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:52 [INFO] [remote-modules.test.sh] Module does not have a remote md5, will download anyways
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Hash for downloaded file is 08c6affbeb3cd247031879a23e357636
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Successfully downloaded /tmp/tmp.20221126041648/log.sh from https://github.com/gruntwork-io/bash-commons/raw/master/modules/bash-commons/src/log.sh
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: /tmp/tmp.20221126041648/log.sh, Actual: /tmp/tmp.20221126041648/log.sh) => PASS
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Remote command forced to curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using curl for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: curl, Actual: curl) => PASS
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Remote command forced to wget
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: wget, Actual: wget) => PASS
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Remote command forced to custom_downloader
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using custom_downloader for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:16:53 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:16:53 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: custom_downloader, Actual: custom_downloader) => PASS
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_function_exists
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_function_exists
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:30 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Checking for function named modules.remote-modules.url
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found function named modules.remote-modules.url
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:30 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:30 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Module does not have a remote md5, will download anyways
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Hash for downloaded file is 08c6affbeb3cd247031879a23e357636
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Successfully downloaded /tmp/tmp.20221126041730/log.sh from https://github.com/gruntwork-io/bash-commons/raw/master/modules/bash-commons/src/log.sh
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: /tmp/tmp.20221126041730/log.sh, Actual: /tmp/tmp.20221126041730/log.sh) => PASS
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Remote command forced to curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using curl for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: curl, Actual: curl) => PASS
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Remote command forced to wget
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: wget, Actual: wget) => PASS
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Remote command forced to custom_downloader
+2022-11-26 04:17:35 [INFO] [remote-modules.test.sh] Using custom_downloader for fetching remote content
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Checking for function named modules.test.assert_equals
+2022-11-26 04:17:35 [DEBUG] [remote-modules.test.sh] Found function named modules.test.assert_equals
+2022-11-26 04:17:36 [DEBUG] [remote-modules.test.sh] Found wget at /usr/bin/wget
+2022-11-26 04:17:36 [DEBUG] [remote-modules.test.sh] Found curl at /usr/bin/curl
+2022-11-26 04:17:36 [INFO] [remote-modules.test.sh] Using wget for fetching remote content
+2022-11-26 04:17:36 [DEBUG] [remote-modules.test.sh] assert_equals(Expected: custom_downloader, Actual: custom_downloader) => PASS

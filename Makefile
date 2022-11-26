@@ -6,14 +6,16 @@ BUILD_DIR			?= ./build
 LIB_DIR				?= ./lib
 SRC_DIR				?= ./src
 RES_DIR				?= ./res
+TST_DIR				?= ./test
 
-LIBS 				:= $(wildcard ${LIB_DIR}/*)
+LIBS 				:= $(wildcard ${LIB_DIR}/*.lib.sh)
 SRCS 				:= $(wildcard ${SRC_DIR}/*)
 RES					:= $(wildcard ${RES_DIR}/*)
+TESTS				:= $(wildcard ${TST_DIR}/*.test.sh)
 
 OUTPUT_BIN			:= $(OUTPUT_DIR)/$(OUTPUT_SCRIPT_NAME)
 
-.phony: build install clean
+.phony: build install clean tests/all
 
 default: install
 
@@ -52,3 +54,8 @@ replace_tokens: $(LIBS) $(SRCS) $(RES)
 		sed -i "s|__NAMESPACE__|$(NAMESPACE)|g" $$dest ; \
 	done
 
+tests: $(TESTS)
+	@for f in $^ ; do \
+		echo "Running tests in $$f" ; \
+		MODULES_TEST_LOG_FILE=$$(pwd)/$$(basename $$f).log MODULES_LOG_PATH=$$(pwd) MODULES_LOG_FILE=$$(basename $$f).log $$f ; \
+	done
